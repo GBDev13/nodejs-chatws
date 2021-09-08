@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Socket IO</title>
+  </head>
+  
+  <body>
+   
+    <div class="container">
+      <div class="row">
+        <button type="button" class="logout" id="logout">Logout</button>
+        <div id="username"></div>
+        <hr />
+
+        <div id="chat_content">
+
+          <div class="messages" id="messages"></div>
+
+        </div>
+
+        <input class="form-control" type="text" placeholder="Digite sua mensagem" id="message_input" />
+        <footer>
+        </footer>
+
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js" integrity="sha512-WL6WGKMPBiM9PnHRYIn5YEtq0Z8XP4fkVb4qy7PP4vhmYQErJ/dySyXuFIMDf1eEYCXCrQrMJfkNwKc9gsjTjA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="/socket.io/socket.io.js"></script> -->
+  <script src="chat.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js" integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>
